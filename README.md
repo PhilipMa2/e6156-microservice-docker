@@ -58,7 +58,7 @@ page/documentation for the application.
    2. ```pip``` installing ```requirements.txt```
    3. Executing and accessing the application.
 4. In ```main.py,``` modify the line ```return {"message": f"Hello {name}"}``` to return
-a message of the form ```return {"message": f"Awesome cloud developer dff8 says Hello {name}"}```
+a message of the form ```return {"message": f"Awesome cloud developer dff9 says Hello {name}"}```
 Replace my uni with yours.
 5. Rerun the application to test.
 
