@@ -5,7 +5,7 @@
 # I cannot explicitly cover and explain every concept in class.
 #
 import json
-from students import StudentsResource as StudentsResource
+from resources.students import StudentsResource as StudentsResource
 
 
 def t1():
