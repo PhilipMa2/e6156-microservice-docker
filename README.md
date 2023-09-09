@@ -66,6 +66,20 @@ Replace my uni with yours.
 ### Publish
 
 
+<hr>
+
+__Note:__
+- The default behavior for virtual environment creation is to
+create the venv in the current folder/project.
+- You can create the venv anywhere on the file system.
+- You do not want to venv pushed to GitHub. So, if the venv is inside the
+project, remove the directory from the set of files that will be pushed.
+The easiest way is to add to a [.gitignore file.](https://git-scm.com/docs/gitignore)
+
+<hr>
+
+<br>
+
 - Commit and push your application to the GitHub repository.
 
 
