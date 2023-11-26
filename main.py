@@ -1,18 +1,41 @@
-from flask import Flask
+from fastapi import FastAPI, HTTPException
 
-app = Flask(__name__)
+app = FastAPI()
 
+teams_db = []
 
-@app.get("/")
-def root():
-    return {"message": "Hello World"}
+class Team:
+    def __init__(self, team_id, requester_id, requestee_id):
+        self.team_id = team_id
+        self.requester_id = requester_id
+        self.requestee_id = requestee_id
+        self.confirmed = False
 
+@app.get("/team/{student_id}")
+def read_team(student_id: int):
+    for entry in teams_db:
+        if student_id in [entry.requester_id, entry.requestee_id]:
+            return entry
+    raise HTTPException(status_code=404, detail="Team not found")
 
-@app.get("/hello/{name}")
-def say_hello(name: str):
-    return {"message": f"Awesome cloud developer dff9 says hello {name}"}
+@app.post("/team/")
+def create_team(team_id: int, requester_id: int, requestee_id: int):
+    new_team = Team(team_id=team_id, requester_id=requester_id, requestee_id=requestee_id)
+    teams_db.append(new_team)
+    return new_team
 
+@app.put("/team/{team_id}")
+def confirm_team(team_id: int):
+    for entry in teams_db:
+        if entry.team_id == team_id:
+            entry.confirmed = True
+            return {"message": "Team confirmed"}
+    raise HTTPException(status_code=404, detail="Team not found")
 
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8012)
+@app.delete("/team/{team_id}")
+def delete_team(team_id: int):
+    for entry in teams_db:
+        if entry.team_id == team_id:
+            teams_db.remove(entry)
+            return {"message": "Team deleted"}
+    raise HTTPException(status_code=404, detail="Team not found")
