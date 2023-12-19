@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:Ma19690022@database-1.csmdb1acis22.us-east-2.rds.amazonaws.com:3306/teams'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:Ma19690022@acadmate-db.csmdb1acis22.us-east-2.rds.amazonaws.com:3306/acadmate'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
