@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://admin:Ma19690022@acadmate-db.csmdb1acis22.us-east-2.rds.amazonaws.com:3306/acadmate'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://admin:Ma19690022@acadmate-db.csmdb1acis22.us-east-2.rds.amazonaws.com:3306/acadmate'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -29,8 +29,8 @@ class Team(db.Model):
     __tablename__ = 'teams'
 
     team_id = db.Column(db.Integer, primary_key=True)
-    requester_id = db.Column(db.Integer, db.ForeignKey('students.id'), nullable=False)
-    requestee_id = db.Column(db.Integer, db.ForeignKey('students.id'), nullable=False)
+    requester_id = db.Column(db.Integer, nullable=False)
+    requestee_id = db.Column(db.Integer, nullable=False)
     confirmed = db.Column(db.Boolean, default=False)
 
 with app.app_context():
