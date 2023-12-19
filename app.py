@@ -29,8 +29,8 @@ class Team(db.Model):
     __tablename__ = 'teams'
 
     team_id = db.Column(db.Integer, primary_key=True)
-    requester_id = db.Column(db.Integer)
-    requestee_id = db.Column(db.Integer)
+    requester_id = db.Column(db.Integer, db.ForeignKey('students.id'), nullable=False)
+    requestee_id = db.Column(db.Integer, db.ForeignKey('students.id'), nullable=False)
     confirmed = db.Column(db.Boolean, default=False)
 
 with app.app_context():
