@@ -1,0 +1,108 @@
+Exception on /team/applied/113490274861503125298 [GET]
+Traceback (most recent call last):
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/app.py", line 52, in read_team_applied
+    return jsonify(teams.__dict__)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Mapper is not JSON serializable
+Exception on /team/received/113490274861503125298 [GET]
+Traceback (most recent call last):
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/app.py", line 59, in read_team_received
+    return jsonify(teams.__dict__)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Mapper is not JSON serializable
+Exception on /team/formed/113490274861503125298 [GET]
+Traceback (most recent call last):
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/app.py", line 66, in read_team_formed
+    return jsonify(teams.__dict__)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Mapper is not JSON serializable
+Exception on /team/applied/113490274861503125298 [GET]
+Traceback (most recent call last):
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/app.py", line 52, in read_team_applied
+    return jsonify(teams.__dict__)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/philipma/.pyenv/versions/3.9.2/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/philipma/Documents/Columbia/Master/cloud/project/e6156-microservice-docker/.venv/lib/python3.9/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Mapper is not JSON serializable
